@@ -1,0 +1,238 @@
+body{
+    background-color: #FFF7D1;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-navBar{
+    font-family: "Work Sans", sans-serif;
+    margin-left: 75px;
+    color: #FF8585;
+}
+.navBar-left{
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+.menu-NavBar{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    font-family: "Quicksand", serif;
+}
+
+.menu-NavBar a{
+    color: #1B1B1B;
+}
+
+.menu-NavBar a:hover{
+    color: #FF8585;
+}
+
+.menu-NavBar li:first-child a{
+    color: #FF8585;
+    text-decoration: underline;
+}
+
+.inicio{
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-inicio{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-inicio{
+    position: absolute; /* Permite que este div esté encima de la imagen */
+    top: 50%; /* Centro vertical */
+    left: 50%; /* Centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el div */
+    text-align: center;
+    z-index: 1; /* Asegura que esté encima de la imagen */
+    gap: 45px;
+}
+
+.info-inicio img{
+    width: 380px;
+}
+
+.info-inicio h1{
+    font-family: "Playfair Display", serif;
+    color: #FF8585;
+    font-size: 60px;
+    margin: 0;
+}
+
+p{
+    font-family: "Quicksand", serif;
+    color: white;
+}
+
+.nosotros h1{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #6F3E3E;
+    margin-bottom: 70px;
+}
+
+.nosotros{
+    margin-top: 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.info-nosotros{
+    background-color: #FFB0B0;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p{
+    color: #1B1B1B;
+    font-size: 32px;
+    text-shadow: 2px 2px 8px #1B1B1B;
+}
+
+.img-info{
+    margin-left: auto;
+}
+
+.servicios{
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.servicios h1{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #6F3E3E;
+    margin-bottom: 70px;
+}
+
+.iconos{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.iconos div{
+    background-color: #FFD09B;
+    border: 2px solid #1B1B1B;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px #1B1B1B;
+}
+
+.iconos img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tipos-uñas{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.tipos-uñas label{
+    font-family: "Quicksand", serif;
+    margin-top: 86px;
+    background-color: #FFD09B;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    color: #1B1B1B;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #1B1B1B;
+}
+
+.pie-pagina{
+    display: flex;
+    gap: 80px;
+    background-color: #6F3E3E;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo{
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    align-items: center;
+    width: 220px;
+    height: 180px;
+}
+
+.logo label{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    color: #FF8585;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.explora label, .contactanos label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Espacio debajo de cada label */
+    display: inline-block; /* Permite aplicar margen inferior sin que el label ocupe toda la línea */
+}
+
+.explora a{
+    list-style: none;
+    color: white;
+}
+
+.horas-trabajo label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 70px; /* Espacio debajo de cada label */
+    display: inline-block; 
+}
+
+.pie-pagina li{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.derechos{
+    padding: 20px 50px 20px;
+    display: flex;
+    border-top: 2px solid #FF8585;
+    background-color: #6F3E3E;
+}
+
+.derechos label:first-child{
+    margin-right: auto;
+}
+
+.derechos label{
+    font-family: "Inter", sans-serif;
+    color: #FF8585;
+    font-size: 12px;
+}
+
