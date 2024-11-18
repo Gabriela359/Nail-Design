@@ -1,7 +1,7 @@
 body{
     background-color: #FFF7D1;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1328px;
 }
 
 nav{
@@ -10,7 +10,7 @@ nav{
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1328px;
 }
 
 a{
@@ -71,7 +71,7 @@ p, label{
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1328px;
     height: 600px;
     margin: 0 auto;
 }
@@ -116,7 +116,7 @@ p{
 
 .nosotros{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1328px;
     padding: 40px 20px;
 }
 
@@ -149,7 +149,7 @@ p{
 
 .servicios{
     margin: 82px auto;
-    max-width: 1200px;
+    max-width: 1328px;
     text-align: center;
 }
 
@@ -209,7 +209,7 @@ p{
     color: white;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1328px;
     margin: 0 auto;
     padding: 30px 20px;
 }
