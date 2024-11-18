@@ -1,31 +1,57 @@
 body{
     background-color: #FFF7D1;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 a{
     text-decoration: none;
 }
 
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+p, label{
+    font-size: 1rem;
+}
+
+
 .title-navBar{
     font-family: "Work Sans", sans-serif;
-    margin-left: 75px;
+    margin-left: 20px;
     color: #FF8585;
 }
-.navBar-left{
-    margin-left: auto;
-    margin-right: 75px;
+.navBar-right{
+    display: block;
+    margin: 0 20px 0 0;
+    padding-left: 30px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.phone-menu{
+    display: none;
 }
 
 .menu-NavBar{
     list-style: none;
     display: flex;
-    gap: 45px;
+    gap: 30px;
     font-family: "Quicksand", serif;
+    padding: 0;
 }
 
 .menu-NavBar a{
@@ -44,11 +70,15 @@ a{
 .inicio{
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .imagen-inicio{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -59,18 +89,17 @@ a{
     transform: translate(-50%, -50%); /* Centra el div */
     text-align: center;
     z-index: 1; /* Asegura que esté encima de la imagen */
-    gap: 45px;
+    /*gap: 45px;*/
 }
 
 .info-inicio img{
-    width: 380px;
+    width: 300px;
 }
 
 .info-inicio h1{
     font-family: "Playfair Display", serif;
     color: #FF8585;
-    font-size: 60px;
-    margin: 0;
+    font-size: 50px;
 }
 
 p{
@@ -86,14 +115,15 @@ p{
 }
 
 .nosotros{
-    margin-top: 82px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 20px;
 }
 
 .info-nosotros{
     background-color: #FFB0B0;
     display: flex;
+    flex-wrap: nowrap; /* Evita que los elementos se muevan a otra línea */
     gap: 20px;
     border-radius: 20px;
     padding: 50px;
@@ -111,9 +141,16 @@ p{
     margin-left: auto;
 }
 
+.img-info img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .servicios{
-    margin-top: 82px;
-    margin-bottom: 82px;
+    margin: 82px auto;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .servicios h1{
@@ -125,15 +162,15 @@ p{
 
 .iconos{
     display: flex;
-    gap: 120px;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 0;
 }
 
 .iconos div{
     background-color: #FFD09B;
     border: 2px solid #1B1B1B;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -142,14 +179,14 @@ p{
 }
 
 .iconos img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 180px;
+    max-height: 180px;
 }
 
 .tipos-uñas{
     display: flex;
-    justify-content: center;
-    gap: 150px;
+    justify-content: space-around;
+    gap: 0;
 }
 
 .tipos-uñas label{
@@ -157,7 +194,7 @@ p{
     margin-top: 86px;
     background-color: #FFD09B;
     padding: 10px;
-    width: 200px;
+    width: 150px;
     text-align: center;
     border-radius: 20px;
     color: #1B1B1B;
@@ -167,12 +204,14 @@ p{
 
 .pie-pagina{
     display: flex;
-    gap: 80px;
+    gap: 20px;
     background-color: #6F3E3E;
     color: white;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
 .logo{
@@ -182,8 +221,8 @@ p{
 }
 .logo img{
     align-items: center;
-    width: 220px;
-    height: 180px;
+    width: 150px;
+    height: auto;
 }
 
 .logo label{
@@ -206,12 +245,14 @@ p{
     color: white;
 }
 
-.horas-trabajo label{
+/*.horas-trabajo label{
     font-weight: 600;
     font-size: 1.2rem;
-    margin-bottom: 70px; /* Espacio debajo de cada label */
-    display: inline-block; 
 }
+
+.horas-trabajo li:nth-child(3), li:nth-child(4){
+    color: #6F3E3E;
+}*/
 
 .pie-pagina li{
     list-style: none;
@@ -224,6 +265,9 @@ p{
     display: flex;
     border-top: 2px solid #FF8585;
     background-color: #6F3E3E;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 20px 10px;
 }
 
 .derechos label:first-child{
@@ -236,3 +280,79 @@ p{
     font-size: 12px;
 }
 
+.btn-reservas{
+    font-family: "Quicksand", serif;
+    position: fixed;
+    width: 80px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #FFD09B;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid #FF8585;
+}
+
+@media (min-width: 500px){
+    #menu-toggle{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .navBar-right{
+        display: none;
+    }
+
+    .title-navBar{
+        margin-left: auto;
+        padding-right: 20px;
+    }
+
+    .icon-menu{
+        display: block;
+    }
+
+    .phone-menu{
+        display: none;
+        width: 80px;
+        height: auto; /*toma el tamaño del contenido como tal*/
+        border: 3px;
+        border-radius: 8px;
+        padding: 20px 20px 0 20px;
+        background-color: #FFB0B0        ;
+    }
+
+    .phone-menu ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .phone-menu ul li{
+        text-align: left;
+    }
+
+    .phone-menu ul li a{
+        text-decoration: none;
+        color: #6F3E3E;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-family: "Quicksand", serif;
+    }
+
+    .info-nosotros{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .info p{
+        text-align: center;
+        font-size: 25px;
+    }
+}

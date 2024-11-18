@@ -1,0 +1,64 @@
+body{
+    background-color: #FFF7D1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: #FFB0B0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    color: #6F3E3E;
+}
+
+p, label, button, input{
+    font-family: "Quicksand", serif;
+    color: #1B1B1B;
+}
+
+h2>span{
+    font-family: "Quicksand", serif;
+    color: #1B1B1B;
+    font-weight: lighter;
+}
+
+button{
+    width: 100%;
+    border: none;
+    color:#1B1B1B;
+    font-weight: bold;
+    background-color: #FFD09B;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-volver{
+    font-family: "Quicksand", serif;
+    position: fixed;
+    width: 80px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #FFD09B;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid #FF8585;
+}

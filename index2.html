@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>RESERVA TU SERVICIO</h1>
+
+        <form id="formulario">
+            <!-- Campo para número de personas -->
+            <label for="numero">
+                ¿Cuántas personas vendrán para el servicio de uñas? <br>
+                <input type="number" id="numero" required> <br>
+            </label>
+            <br>
+            <!-- Sección de servicios -->
+            <div class="servicios">
+                <label for="servicios">
+                    ¿Qué servicios vas a usar? <br>
+                </label>
+                <label for="uñas1">
+                    Uñas Acrílicas - 60.000 pesos
+                    <input type="checkbox" class="servicio" id="uñas1" data-precio="60000">
+                </label> <br>
+                <label for="uñas2">
+                    Uñas en Gel - 40.000 pesos
+                    <input type="checkbox" class="servicio" id="uñas2" data-precio="40000">
+                </label> <br>
+                <label for="uñas3">
+                    Semipermanente - 35.000 pesos
+                    <input type="checkbox" class="servicio" id="uñas3" data-precio="35000">
+                </label>
+            </div>
+            <br>
+
+            <!-- Botón de siguiente para generar los campos de personas -->
+            <button type="button" id="siguiente">Siguiente</button>
+        </form>
+
+        <h2>Total: <span id="total">0</span></h2>
+        <div id="descuento"></div>
+        <h2>Total con Descuento: <span id="totalDescuento">0</span></h2>
+
+        <!-- Resultado de los campos generados para cada persona -->
+        <div id="resultado"></div>
+
+        <!-- Botón de enviar -->
+        <button type="submit" id="enviar">Enviar</button>
+    </main>
+    <a href="index.html" class="btn-volver" target="_blank">VOLVER</a>
+    <script src="scripts/script-reservas.js"></script>
+</body>
+</html>
